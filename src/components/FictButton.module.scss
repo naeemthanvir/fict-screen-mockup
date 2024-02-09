@@ -1,0 +1,18 @@
+.btnContainer{
+    button{
+        text-transform: capitalize;
+        padding: 7px 38px;
+        width: 200px;
+        margin: 0 10px;
+
+        .btnContained{
+            background: #1b3e6e;
+        }
+        
+        .btnOutlined{
+            border-color: #f99c25;
+            color: #f99c25;
+        }
+    }
+
+}

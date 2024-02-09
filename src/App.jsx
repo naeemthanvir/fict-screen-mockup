@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import Button from '@mui/material/Button';
 
-import DocUploadModal from './DocUploadModal'
+import DocUploadModal from './components/DocUploadModal'
+import styles from "./App.module.scss"
 
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className={styles.app}>
       <Button variant="outlined" onClick={handleModalOpenClose}>
         Upload Document
       </Button>

@@ -1,0 +1,38 @@
+// modal exit icon: #1b3e6e
+// text blue: #1b3e6e
+// text green: #3fae5d
+// button blue: #1b3e6e
+// cancel button: #f99c25
+.modalXbtn{
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #1b3e6e;
+    display: inline-block;
+    display: inline-block;
+    text-align: center;
+    padding: 4px 9px 1px;
+    border-radius: 23%;
+    font-weight: lighter;
+}
+.container{
+    width: 900px;
+    color: #1b3e6e;
+
+    h2{
+        text-align: center;
+        border-bottom: 2px solid #d7d7d7;
+        margin: 0 auto 20px;
+        width: 209px;
+        padding-bottom: 5px;
+    }
+
+    .instruction{
+        text-align: center;
+    }
+    .btnsWrapper {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+}
+
