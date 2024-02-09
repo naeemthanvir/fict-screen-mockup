@@ -1,10 +1,22 @@
 import { useState } from 'react'
+import Button from '@mui/material/Button';
+
+import DocUploadModal from './DocUploadModal'
+
 
 function App() {
+  const [open, setOpen] = useState(false)
+
+  const handleModalOpenClose = () => {
+    setOpen(!open)
+  }
 
   return (
     <div>
-      Bismillah
+      <Button variant="outlined" onClick={handleModalOpenClose}>
+        Upload Document
+      </Button>
+      <DocUploadModal handleModalOpenClose={handleModalOpenClose} open={open} />
     </div>
   )
 }
