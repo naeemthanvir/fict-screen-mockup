@@ -3,7 +3,7 @@ import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
 import styles from "./FictButton.module.scss"
 
-export default function FictButton({variant, btnText, handleClick}) {
+export default function FictButton({variant, btnText, handleClick, type=""}) {
     const ContainedBtn = styled(Button)({
         background: "#1b3e6e",
         color: "#fff",
@@ -24,8 +24,8 @@ export default function FictButton({variant, btnText, handleClick}) {
     })
   return (
     <div className={styles.btnContainer}>
-      {variant === "contained" && <ContainedBtn onClick={handleClick}>{btnText}</ContainedBtn>}
-      {variant === "outlined" && <OutlinedBtn onClick={handleClick}>{btnText}</OutlinedBtn>}
+      {variant === "contained" && <ContainedBtn onClick={handleClick} type={type}>{btnText}</ContainedBtn>}
+      {variant === "outlined" && <OutlinedBtn onClick={handleClick} type={type}>{btnText}</OutlinedBtn>}
 
     </div>
   );

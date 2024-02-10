@@ -15,7 +15,8 @@
     font-weight: lighter;
 }
 .container{
-    width: 900px;
+    width: 950px;
+    padding: 0 50px 10px;
     color: #1b3e6e;
 
     h2{
@@ -26,8 +27,13 @@
         padding-bottom: 5px;
     }
 
+    p{
+        font-size: 14px;
+    }
+
     .instruction{
         text-align: center;
+        font-size: 16px;
     }
     .btnsWrapper {
         display: flex;
