@@ -12,22 +12,31 @@ function FictSelect({options, selectID, selectLabel, register, name}) {
   const handleChange = (event) => {
     setVal(event.target.value);
   };
+
+  const selectItems = options.map((item) => {
+    return <MenuItem sx={{
+      "&.MuiMenuItem-root": {
+        fontSize: "12px"
+      }
+    }} key={item.value} value={item.value}>{item.label}</MenuItem>
+  })
+
   return (
-    <FormControl sx={{ m: 1, width: "100%", margin: 0}} size="small">
-        <InputLabel className={styles.label}><strong>{selectLabel}</strong></InputLabel>
+    <FormControl key={selectID} sx={{ m: 1, width: "100%", margin: "0 0 5px 0"}} size="small">
+        <InputLabel className={styles.label}><span>{selectLabel}</span></InputLabel>
         <Select
         id={selectID}
         value={val}
         label={selectLabel}
         {...register(name)}
         onChange={handleChange}
+        sx={{
+          "& .MuiSelect-select": {
+            fontSize: "12px"
+          }
+        }}
         >
-        <MenuItem value="">
-            <em>None</em>
-        </MenuItem>
-        <MenuItem value={10}>Ten</MenuItem>
-        <MenuItem value={20}>Twenty</MenuItem>
-        <MenuItem value={30}>Thirty</MenuItem>
+        {selectItems}
         </Select>
     </FormControl>
   )
