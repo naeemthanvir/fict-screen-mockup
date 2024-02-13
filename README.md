@@ -1,5 +1,5 @@
 Fictional screen mockup
 
-after cloning repo:
-npm install
-npm run dev
+after cloning repo:<br />
+npm install <br />
+npm run dev <br />
